@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<header>
-<title> Carl Shotwell</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-</header>
+---
+layout: default
+title: carltalk.com
+---
 
-<body>
-    <div id="page">
-		
-        <div id="header">
-
-        	<h1>Carl Shotwell</h1>
-            
-      </div>
-
-	  <img src="http://i.imgur.com/NA1SoXr.jpg" width="398" height="534" style="margin-right:1000px;">
-  <div id="navbar">
-	  <ul id="navlist" class="link">
-		  <li><a href="#">home</a></li>
-		  <li><a href="#">about</a></li>
-		  <li><a href="http://www.github.com/cshotwell">code</a></li>
-		  <li><a href="#">contact</a></li>
-      </div>
-  </div>
-</body> 
-</html>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
