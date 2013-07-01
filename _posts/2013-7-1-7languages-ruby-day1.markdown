@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 	"7 Languages In 7 Weeks Day 1"
 date: 	2013-07-01 3:07:00
 categories: update 7lang ruby

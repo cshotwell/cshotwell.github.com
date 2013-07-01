@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 	"Obligatory First Blog Post"
 date: 	2013-06-26 1:39:00
 categories: jekyll update
